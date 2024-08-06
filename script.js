@@ -23,8 +23,13 @@ document.getElementById('startBtn').addEventListener('click', async () => {
     let progress = 0;
     const updateProgress = (increment) => {
         progress += increment;
-        progressBar.style.width = `${progress}%`;
-        progressText.innerText = `${progress}%`;
+        if (progress == '80' || progress == 80) {
+            progressBar.style.width = `100%`;
+            progressText.innerText = `100%`;
+        } else {
+            progressBar.style.width = `${progress}%`;
+            progressText.innerText = `${progress}%`;
+        }
     };
 
     const generateKeyProcess = async () => {
