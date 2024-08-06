@@ -65,10 +65,6 @@ document.getElementById('startBtn').addEventListener('click', async () => {
     startBtn.disabled = false;
 });
 
-document.getElementById('creatorChannelBtn').addEventListener('click', () => {
-    window.location.href = 'https://dzen.ru/id/6692df520f4cdd6ded47c3ee'; // Замените на URL вашего канала
-});
-
 function generateClientId() {
     const timestamp = Date.now();
     const randomNumbers = Array.from({ length: 19 }, () => Math.floor(Math.random() * 10)).join('');
