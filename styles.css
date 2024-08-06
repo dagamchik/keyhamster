@@ -67,7 +67,7 @@ button {
 #progressBar {
     height: 100%;
     width: 0%;
-    background-color: #76c7c0;
+    background-color: #04a191;
     border-radius: 15px;
     transition: width 0.3s;
 }
